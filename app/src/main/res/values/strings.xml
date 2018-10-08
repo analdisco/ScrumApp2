@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">The agile app</string>
+    <string name="placeholder">contentDescriptionPlaceholder</string>
+</resources>

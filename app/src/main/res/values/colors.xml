@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Colors required by Android Theme -->
+    <color name="colorPrimary">@color/aquamarine</color>
+    <color name="colorPrimaryDark">@color/cerulean</color>
+    <color name="colorAccent">@color/warmGrey</color>
+
+    <!-- Colors from Zeplin style guide -->
+    <color name="cerulean">#0095db</color>
+    <color name="aquamarine">#00cbc6</color>
+    <color name="white">#efefef</color>
+    <color name="warmGrey">#707070</color>
+    <color name="dark">#1e2128</color>
+</resources>
