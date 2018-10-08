@@ -23,14 +23,16 @@
             android:contentDescription="@string/placeholder"
             android:scaleX="1.6"
             android:scaleY="1.6"
-            android:src="@drawable/ic_splash_bg" />
+            android:src="@drawable/ic_splash_bg"
+            android:translationX="10dp"
+            android:translationY="-100dp" />
 
         <!-- Splash logo -->
         <ImageView
-            android:layout_gravity="center"
             android:id="@+id/imageView_splash_logo"
             android:layout_width="200dp"
             android:layout_height="200dp"
+            android:layout_gravity="center"
             android:contentDescription="@string/placeholder"
             android:src="@drawable/ic_splash_logo" />
 
