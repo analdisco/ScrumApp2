@@ -8,7 +8,20 @@
         <item name="colorAccent">@color/colorAccent</item>
 
         <item name="android:windowBackground">@drawable/selector_gradient_bg</item>
-        <item name="android:windowTranslucentStatus">true</item>
+    </style>
+
+    <style name="TextBase">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:fontFamily">sans-serif-condensed</item>
+    </style>
+
+    <style name="OnBoardingTitle" parent="TextBase">
+        <item name="android:textSize">20sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="OnBoardingText" parent="TextBase">
+        <item name="android:textSize">18sp</item>
     </style>
 
 </resources>

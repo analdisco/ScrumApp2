@@ -3,6 +3,7 @@ package com.interpolis.scrumapp.usecases
 import android.os.Handler
 
 class SplashUseCase {
+    private val splashTimeMs: Long = 3000
     private val handler = Handler()
 
     fun load(loadAnimation: () -> Unit,
@@ -13,10 +14,10 @@ class SplashUseCase {
         loadAnimation()
 
         // Exit animation
-        handler.postDelayed(exitAnimation, 2000)
+        handler.postDelayed(exitAnimation, splashTimeMs-500)
 
         // End loading
         // TODO: Load app resources
-        handler.postDelayed(done, 3000)
+        handler.postDelayed(done, splashTimeMs)
     }
 }

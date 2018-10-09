@@ -1,4 +1,4 @@
-package com.journaldev.viewpager
+package com.interpolis.scrumapp.adapters
 
 import android.content.Context
 import android.support.v4.view.PagerAdapter
@@ -7,7 +7,7 @@ import android.view.View
 import android.view.ViewGroup
 import com.interpolis.scrumapp.enums.OnBoardingEnum
 
-class CustomPagerAdapter(private val mContext: Context) : PagerAdapter() {
+class OnBoardingPagerAdapter(private val mContext: Context) : PagerAdapter() {
 
     override fun instantiateItem(collection: ViewGroup, position: Int): Any {
         val modelObject = OnBoardingEnum.values()[position]
@@ -27,10 +27,5 @@ class CustomPagerAdapter(private val mContext: Context) : PagerAdapter() {
 
     override fun isViewFromObject(view: View, `object`: Any): Boolean {
         return view === `object`
-    }
-
-    override fun getPageTitle(position: Int): CharSequence? {
-        val customPagerEnum = OnBoardingEnum.values()[position]
-        return mContext.getString(customPagerEnum.getTitleResId())
     }
 }
