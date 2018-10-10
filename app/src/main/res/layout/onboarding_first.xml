@@ -4,29 +4,41 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <TextView
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        style="@style/OnBoardingTitle"
-        android:layout_gravity="center"
-        android:text="@string/onboarding_first_title" />
+        android:layout_marginTop="60dp"
+        android:orientation="vertical">
 
-    <TextView
-        style="@style/OnBoardingText"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:gravity="center"
-        android:lines="2"
-        android:maxLines="2"
-        android:text="@string/onboarding_first_text" />
+        <TextView
+            style="@style/OnBoardingTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:paddingStart="@dimen/onboarding_text_padding"
+            android:paddingEnd="@dimen/onboarding_text_padding"
+            android:text="@string/onboarding_first_title" />
+
+        <TextView
+            style="@style/OnBoardingText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:lines="2"
+            android:maxLines="2"
+            android:paddingStart="@dimen/onboarding_text_padding"
+            android:paddingEnd="@dimen/onboarding_text_padding"
+            android:text="@string/onboarding_first_text" />
+
+    </LinearLayout>
 
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:contentDescription="@string/placeholder"
-        android:scaleX="1"
-        android:scaleY="1"
+        android:scaleX="1.2"
+        android:scaleY="1.2"
         android:src="@drawable/onboarding_first2x"
         android:translationX="10dp"
         android:translationY="156dp" />

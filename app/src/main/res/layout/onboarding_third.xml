@@ -1,26 +1,46 @@
-<?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout
+<LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <TextView
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Third"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:layout_marginTop="60dp"
+        android:orientation="vertical">
+
+        <TextView
+            style="@style/OnBoardingTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:paddingStart="@dimen/onboarding_text_padding"
+            android:paddingEnd="@dimen/onboarding_text_padding"
+            android:text="@string/onboarding_third_title" />
+
+        <TextView
+            style="@style/OnBoardingText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:lines="2"
+            android:maxLines="2"
+            android:paddingStart="@dimen/onboarding_text_padding"
+            android:paddingEnd="@dimen/onboarding_text_padding"
+            android:text="@string/onboarding_third_text" />
+
+    </LinearLayout>
 
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:contentDescription="@string/placeholder"
+        android:scaleX="1.2"
+        android:scaleY="1.2"
         android:src="@drawable/onboarding_third2x"
         android:translationX="10dp"
-        android:translationY="200dp" />
+        android:translationY="156dp" />
 
-</android.support.constraint.ConstraintLayout>
+</LinearLayout>
