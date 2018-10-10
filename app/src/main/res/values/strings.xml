@@ -2,7 +2,7 @@
     <string name="app_name">The agile app</string>
     <string name="placeholder">contentDescriptionPlaceholder</string>
     <string name="onboarding_first_title">Scrum poker kaarten</string>
-    <string name="onboarding_first_text">Hier vind je de pokerkaarten. Swipe er doorheen en selecteer je kaart.</string>
+    <string name="onboarding_first_text">Hier vind je de pokerkaarten.\\nSwipe er doorheen en selecteer je kaart.</string>
     <string name="onboarding_second_title">Over de app</string>
     <string name="onboarding_second_text">De uitleg over de app wordt eenmalig getoond. Je kunt deze terug vindenin het menu.</string>
     <string name="onboarding_third_title">Over app team</string>

@@ -13,6 +13,7 @@ class OnBoardingActivity : BaseActivity() {
 
         // Set adapter for the Onboarding View Pager
         viewPager.adapter = OnBoardingPagerAdapter(this)
+        indicator.setViewPager(viewPager)
     }
 
     // The back button does nothing in this screen
