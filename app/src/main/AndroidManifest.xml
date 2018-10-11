@@ -17,7 +17,7 @@
             </intent-filter>
         </activity>
         <activity android:name=".activities.OnBoardingActivity"></activity>
-
+        <activity android:name=".activities.PokerActivity"></activity>
     </application>
 
 </manifest>

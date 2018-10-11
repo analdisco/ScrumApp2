@@ -1,5 +1,6 @@
 package com.interpolis.scrumapp.activities
 
+import android.content.Intent
 import android.os.Bundle
 import com.interpolis.scrumapp.R
 import com.interpolis.scrumapp.adapters.OnBoardingPagerAdapter
@@ -14,6 +15,11 @@ class OnBoardingActivity : BaseActivity() {
         // Set adapter for the Onboarding View Pager
         viewPager.adapter = OnBoardingPagerAdapter(this)
         indicator.setViewPager(viewPager)
+
+        // Set listener for Cancel button
+        imageViewCancel.setOnClickListener {
+            startActivity(Intent(this, PokerActivity::class.java))
+        }
     }
 
     // The back button does nothing in this screen
