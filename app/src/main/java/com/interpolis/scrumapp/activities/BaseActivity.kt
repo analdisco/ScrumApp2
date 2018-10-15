@@ -1,8 +1,7 @@
 package com.interpolis.scrumapp.activities
 
 import android.os.Bundle
-import android.support.v7.app.AppCompatActivity
-import android.view.WindowManager
+import androidx.appcompat.app.AppCompatActivity
 
 open class BaseActivity : AppCompatActivity() {
 

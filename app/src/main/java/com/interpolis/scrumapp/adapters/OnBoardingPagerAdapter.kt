@@ -1,15 +1,13 @@
 package com.interpolis.scrumapp.adapters
 
 import android.content.Context
-import android.support.v4.view.PagerAdapter
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-
 import com.interpolis.scrumapp.enums.OnBoardingEnum
 import kotlinx.android.synthetic.main.onboarding_carousel_item.view.*
 
-class OnBoardingPagerAdapter(private val mContext: Context) : PagerAdapter() {
+class OnBoardingPagerAdapter(private val mContext: Context) : androidx.viewpager.widget.PagerAdapter() {
 
     override fun instantiateItem(collection: ViewGroup, position: Int): Any {
         val modelObject = OnBoardingEnum.values()[position]
