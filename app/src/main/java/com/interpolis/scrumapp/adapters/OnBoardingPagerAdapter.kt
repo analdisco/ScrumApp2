@@ -7,16 +7,16 @@ import android.view.ViewGroup
 import com.interpolis.scrumapp.enums.OnBoardingEnum
 import kotlinx.android.synthetic.main.onboarding_carousel_item.view.*
 
-class OnBoardingPagerAdapter(private val mContext: Context) : androidx.viewpager.widget.PagerAdapter() {
+class OnBoardingPagerAdapter(private val context: Context) : androidx.viewpager.widget.PagerAdapter() {
 
     override fun instantiateItem(collection: ViewGroup, position: Int): Any {
         val modelObject = OnBoardingEnum.values()[position]
-        val inflater = LayoutInflater.from(mContext)
+        val inflater = LayoutInflater.from(context)
         val layout = inflater.inflate(modelObject.layoutResId, collection, false) as ViewGroup
 
-        layout.textViewTitle.text = mContext.getText(modelObject.titleResId)
-        layout.textViewText.text = mContext.getText(modelObject.textResId)
-        layout.imageViewSlide.setImageDrawable(mContext.getDrawable(modelObject.imageResId))
+        layout.textViewTitle.text = context.getText(modelObject.titleResId)
+        layout.textViewText.text = context.getText(modelObject.textResId)
+        layout.imageViewSlide.setImageDrawable(context.getDrawable(modelObject.imageResId))
 
         collection.addView(layout)
         return layout
