@@ -16,8 +16,10 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".activities.OnBoardingActivity"></activity>
-        <activity android:name=".activities.PokerActivity"></activity>
+        <activity android:name=".activities.OnBoardingActivity" />
+        <activity android:name=".activities.PokerActivity" />
+        <activity android:name=".activities.PokerCardOverviewActivity" />
+        <activity android:name=".activities.TestActivity"></activity>
     </application>
 
 </manifest>

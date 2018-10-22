@@ -18,7 +18,7 @@ class OnBoardingActivity : BaseActivity() {
 
         // Set listener for Cancel button
         imageViewCancel.setOnClickListener {
-            startActivity(Intent(this, PokerActivity::class.java))
+            startActivity(Intent(this, PokerCardOverviewActivity::class.java))
         }
     }
 
